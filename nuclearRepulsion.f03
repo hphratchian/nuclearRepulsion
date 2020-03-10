@@ -1,4 +1,4 @@
-      Program z
+      Program nuclearRepulsion
 !
 !     This program tests the reading of atomic numbers and Cartesian coordinates
 !     from a Gaussian matrix file using the MQCPack libraries.
@@ -29,13 +29,13 @@
 !
 !     Format Statements
 !
- 1000 Format(1x,'Enter Test Program z.')
+ 1000 Format(1x,'Enter Test Program nuclearRepulsion.')
  1010 Format(3x,'Matrix File: ',A,/)
  1100 Format(1x,'nAtoms=',I4)
  1200 Format(1x,'Atomic Coordinates (Angstrom)')
  1210 Format(3x,I3,2x,A2,5x,F7.4,3x,F7.4,3x,F7.4)
  1300 Format(1x,'Nuclear Repulsion Energy = ',F20.6)
- 8999 Format(/,1x,'END OF TEST PROGRAM z.')
+ 8999 Format(/,1x,'END OF TEST PROGRAM NUCLEARREPULSION.')
 
 !
 !
@@ -102,4 +102,4 @@
 !
   999 Continue
       write(iOut,8999)
-      end program z
+      end program nuclearRepulsion

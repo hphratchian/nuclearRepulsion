@@ -28,7 +28,7 @@ all: nuclearRepulsion.exe
 
 #
 # Generic rule for building general executable program (*.exe) from a standard
-# f90 source (*.f90) file.
+# f03 source (*.f03) file.
 #
-%.exe: %.f90
-	$(RunF) $(LIBS) -o $*.exe $*.f90
+%.exe: %.f03 $(MQCLIB)/libmqc.a
+	$(RunF) $(LIBS) $(Prof) -I$(MQCMODS) -o $*.exe $*.f03 $(MQCLIB)/libmqc.a
